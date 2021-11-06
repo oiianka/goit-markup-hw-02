@@ -1,0 +1,236 @@
+/*
+primary text color #757575
+big header color and main bg #FFFFFF
+small headers color #212121
+accent color #2196F3
+main bg color #FFFFFF
+footer and main header bd color #2F303A
+team bg color #F5F4FA
+footer textcolor rgba(255, 255, 255, 0.6)
+*/
+
+:root {
+  --primary-text-color: #757575;
+  --big-header-color: #ffffff;
+  --small-header-color: #212121;
+  --logo-color: #000000;
+  --accent-color: #2196f3;
+  --footer-bg-color: #2f303a;
+  --team-bg-color: #f5f4fa;
+  --footer-text-color: rgba(255, 255, 255, 0.6);
+}
+
+body {
+  background-color: var(
+    --big-header-color
+  ); /*Don't forget change it after lesson 7*/
+  color: var(--primary-text-color);
+  font-family: Roboto, Sans-serif;
+  letter-spacing: 0.03em;
+}
+
+.lists {
+  list-style-type: none;
+}
+
+/*logo*/
+
+.logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+.logo.blue {
+  color: var(--accent-color);
+}
+
+.logo.black {
+  color: var(--logo-color);
+}
+
+.logo.white {
+  color: var(--big-header-color);
+}
+
+/*nav*/
+
+.site-nav {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--small-header-color);
+  text-decoration: none;
+}
+
+.site-nav:hover {
+  color: var(--accent-color);
+}
+
+.site-nav:focus {
+  color: var(--accent-color);
+}
+
+.site-nav.current {
+  color: var(--accent-color);
+}
+
+.contacts {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
+
+.header .contacts:hover {
+  color: var(--accent-color);
+}
+
+.header .contacts:focus {
+  color: var(--accent-color);
+}
+
+/*main section*/
+
+.hero {
+  background-color: var(
+    --footer-bg-color
+  ); /*Don't forget change it after lesson 7*/
+}
+
+.hero-header {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--big-header-color);
+}
+
+.hero-button {
+  font-family: Roboto, sans-serif; /*Якщо я тут ставлю властивість inherit, то кнопка чомусь не наслідує шрифт (те ж саме і з кнопками на сторінці Портфоліо). З чим це може бути пов'язано?*/
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--big-header-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
+
+/*benefits*/
+
+.benefits-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: var(--small-header-color);
+}
+.benefits-descriptions {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/*What we doing and team members*/
+
+.example .title,
+.team .title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--small-header-color);
+}
+
+.team {
+  background-color: var(
+    --team-bg-color
+  ); /*Don't forget change it after lesson 7*/
+}
+
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--small-header-color);
+}
+.team-profession {
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+/* portfolio page */
+
+.filters {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  color: var(--small-header-color);
+  background-color: var(--team-bg-color);
+  cursor: pointer;
+}
+.filters:hover {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  color: var(--big-header-color);
+  background-color: var(--accent-color);
+}
+
+.filters:focus {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  color: var(--big-header-color);
+  background-color: var(--accent-color);
+}
+.sample-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--small-header-color);
+  text-decoration: none;
+}
+.sample-descriptions {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
+
+/*footer*/
+
+.footer {
+  background-color: var(
+    --footer-bg-color
+  ); /*Don't forget change it after lesson 7*/
+}
+.footer-adress {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--big-header-color);
+}
+
+.footer-contacts {
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--footer-text-color);
+}
