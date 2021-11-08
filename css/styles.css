@@ -215,6 +215,10 @@ body {
   text-decoration: none;
 }
 
+.sample-link {
+text-decoration: none;
+}
+
 /*footer*/
 
 .footer {
@@ -226,6 +230,8 @@ body {
   font-size: 14px;
   line-height: 1.7;
   color: var(--big-header-color);
+  font-style: normal;
+  text-decoration: none;
 }
 
 .footer-contacts {
@@ -233,4 +239,6 @@ body {
   font-size: 14px;
   line-height: 1.7;
   color: var(--footer-text-color);
+  font-style: normal;
+  text-decoration: none;
 }
